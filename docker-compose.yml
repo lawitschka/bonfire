@@ -1,0 +1,20 @@
+web:
+  build: .
+  command: bundle exec ruby server.rb
+  ports:
+    - "80:80"
+  links:
+    - redis
+  volumes:
+    - .:/usr/src/app
+  volumes_from:
+    - bundle
+
+redis:
+  image: redis:2.8
+
+bundle:
+  image: emberthunderstorm_web
+  command: echo "I'm a little data container, short and stout..."
+  volumes:
+    - /bundle

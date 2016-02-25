@@ -1,2 +1,3 @@
 # :zap: Ember Thunderstorm
-Multi Ember.js app server for the Lightning strategy
+
+Multi Ember.js app server for the Lightning deployment strategy.
