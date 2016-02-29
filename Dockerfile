@@ -24,4 +24,6 @@ RUN mkdir $APP_HOME/tmp && \
     mkdir $APP_HOME/tmp/pids \
     mkdir $APP_HOME/log
 
+EXPOSE 80
+
 CMD bundle exec ruby server.rb
